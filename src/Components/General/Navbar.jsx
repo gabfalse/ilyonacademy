@@ -63,6 +63,16 @@ function Navbar() {
             Program
           </a>
 
+<a
+            href="#subjects"
+            className="
+              text-sm font-semibold text-muted
+              transition-colors hover:text-purple
+            "
+          >
+            Subject
+          </a>
+
           <a
             href="#jadwal"
             className="

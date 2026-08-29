@@ -1,9 +1,9 @@
 import {
-  BookOpen,
+  
   UserRound,
   Users,
   Heart,
-  Sparkles,
+  
   Target,
   Home,
 } from "lucide-react";
@@ -384,164 +384,7 @@ function Advantages() {
           HIGHLIGHT
       ========================= */}
 
-      <section
-        className="
-          bg-cream
-          px-0
-          py-20
-          md:py-24
-        "
-      >
-
-        <div className="container">
-
-          <div
-            className="
-              relative
-              overflow-hidden
-              rounded-[32px]
-              bg-purple
-              px-7
-              py-12
-              md:px-12
-              md:py-14
-            "
-          >
-
-            {/* Decoration */}
-
-            <div
-              className="
-                pointer-events-none
-                absolute
-                -right-16
-                -top-16
-                size-40
-                rounded-full
-                bg-white/5
-              "
-            />
-
-            <div
-              className="
-                pointer-events-none
-                absolute
-                -bottom-20
-                -left-10
-                size-56
-                rounded-full
-                bg-teal/20
-              "
-            />
-
-            <div
-              className="
-                relative
-                grid
-                items-center
-                gap-8
-                lg:grid-cols-[1fr_auto]
-              "
-            >
-
-              <div>
-
-                <div
-                  className="
-                    mb-5
-                    flex
-                    size-12
-                    items-center
-                    justify-center
-                    rounded-2xl
-                    bg-white/10
-                    text-yellow
-                  "
-                >
-                  <Sparkles size={23} />
-                </div>
-
-                <h2
-                  className="
-                    font-baloo
-                    text-3xl
-                    font-extrabold
-                    text-white
-                    md:text-4xl
-                  "
-                >
-                  Setiap Anak Punya
-                  <br />
-
-                  <span className="text-yellow">
-                    Potensi yang Berbeda
-                  </span>
-                </h2>
-
-                <p
-                  className="
-                    mt-4
-                    max-w-2xl
-                    text-sm
-                    leading-7
-                    text-white/75
-                  "
-                >
-                  Kami membantu anak belajar dengan pendekatan
-                  yang lebih sesuai, sehingga proses belajar terasa
-                  lebih nyaman dan menyenangkan.
-                </p>
-
-              </div>
-
-              <div
-                className="
-                  flex
-                  shrink-0
-                  items-center
-                  gap-3
-                  rounded-[22px]
-                  bg-white/10
-                  px-5
-                  py-4
-                "
-              >
-
-                <div
-                  className="
-                    flex
-                    size-11
-                    items-center
-                    justify-center
-                    rounded-2xl
-                    bg-white
-                    text-purple
-                  "
-                >
-                  <BookOpen size={21} />
-                </div>
-
-                <div>
-
-                  <p className="text-xs font-bold text-white">
-                    Fokus pada anak
-                  </p>
-
-                  <p className="mt-1 text-[10px] text-white/60">
-                    Belajar dengan nyaman
-
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
+      
 
     </main>
   );
