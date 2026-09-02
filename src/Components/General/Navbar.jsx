@@ -43,18 +43,10 @@ function Navbar() {
         {/* Navigation */}
         <nav className="hidden items-center gap-8 lg:flex">
 
-<a
-            href="/profile"
-            className="
-              text-sm font-semibold text-muted
-              transition-colors hover:text-purple
-            "
-          >
-            Tentang Kami
-          </a>
+
 
           <a
-            href="#program"
+            href="/program"
             className="
               text-sm font-semibold text-muted
               transition-colors hover:text-purple
@@ -63,18 +55,10 @@ function Navbar() {
             Program
           </a>
 
-<a
-            href="#subjects"
-            className="
-              text-sm font-semibold text-muted
-              transition-colors hover:text-purple
-            "
-          >
-            Subject
-          </a>
+
 
           <a
-            href="#jadwal"
+            href="/schedule"
             className="
               text-sm font-semibold text-muted
               transition-colors hover:text-purple

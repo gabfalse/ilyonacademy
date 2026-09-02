@@ -355,7 +355,7 @@ function DaySchedule({ day, schedule }) {
   );
 }
 
-function Schedule() {
+function SchedulePage() {
   return (
     <main
       className="
@@ -698,5 +698,5 @@ function Schedule() {
   );
 }
 
-export default Schedule;
+export default SchedulePage;
 

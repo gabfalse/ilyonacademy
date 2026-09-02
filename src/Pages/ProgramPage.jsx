@@ -1,88 +1,117 @@
+
 import {
   MapPin,
-  Users,
+  CalendarDays,
+  GraduationCap,
   UserRound,
-  Monitor,
   Check,
+  X,
   ArrowRight,
   Sparkles,
 } from "lucide-react";
 
-import { openWhatsApp } from "../../Utils/Whatsapp";
+import { openWhatsApp } from "../Utils/Whatsapp";
 
 const PROGRAMS = [
   {
     id: "harian",
     icon: MapPin,
     number: "01",
-    title: "Les Harian",
-    subtitle: "Belajar langsung di lokasi",
+    title: "Harian",
+    subtitle: "Coba & mulai belajar",
     description:
-      "Kegiatan belajar bersama pengajar di lokasi ILYON Academy dengan suasana belajar yang nyaman dan menyenangkan.",
+      "Pilihan fleksibel untuk anak yang ingin mengikuti kegiatan belajar tanpa harus berkomitmen dalam paket bulanan.",
     price: "Rp5.000",
-    priceNote: "/ sekali pertemuan",
-    features: [
-      "Belajar bersama pengajar",
-      "Suasana belajar menyenangkan",
-      "Cocok untuk belajar rutin",
-    ],
+    priceNote: "/ pertemuan",
+    badge: "FLEKSIBEL",
     theme: "purple",
+
+    features: [
+         { text: "Belajar bersama pengajar", included: true },
+      { text: "Materi sesuai level", included: true },
+      { text: "Tes level awal", included: true },
+      { text: "Sistem perkembangan level", included: false },
+      { text: "Laporan perkembangan bulanan", included: false },
+      { text: "Tes kenaikan level", included: false },
+      { text: "Target & roadmap belajar", included: false },
+      { text: "Evaluasi akhir semester", included: false },
+      { text: "Sertifikat pencapaian", included: false },
+    ],
   },
 
   {
-    id: "small-group",
-    icon: Users,
+    id: "bulanan",
+    icon: CalendarDays,
     number: "02",
-    title: "Small Group",
-    subtitle: "Belajar bersama teman",
+    title: "Bulanan",
+    subtitle: "Belajar & berkembang",
     description:
-      "Pengajar datang ke rumah salah satu murid dalam kelompok. Program ini cocok untuk belajar bersama teman dengan jumlah minimal 4 murid.",
-    price: "Rp10.000",
-    priceNote: "/ pertemuan",
-    features: [
-      "Minimal 4 murid",
-      "Pengajar datang ke rumah",
-      "Belajar bersama teman",
-    ],
+      "Program belajar rutin dengan pemantauan perkembangan anak melalui evaluasi dan laporan setiap bulan.",
+    price: "Rp200.000",
+    priceNote: "/ bulan",
+    badge: "PALING POPULER",
     theme: "teal",
-    badge: "MIN. 4 MURID",
+
+    features: [
+       { text: "Belajar bersama pengajar", included: true },
+      { text: "Materi sesuai level", included: true },
+      { text: "Tes level awal", included: true },
+      { text: "Sistem perkembangan level", included: true },
+      { text: "Laporan perkembangan bulanan", included: true },
+      { text: "Tes kenaikan level", included: true },
+      { text: "Target & roadmap belajar", included: false },
+      { text: "Evaluasi akhir semester", included: false },
+      { text: "Sertifikat pencapaian", included: false },
+    ],
+  },
+
+  {
+    id: "semester",
+    icon: GraduationCap,
+    number: "03",
+    title: "Semester",
+    subtitle: "Tumbuh dengan target",
+    description:
+      "Program jangka panjang dengan target belajar yang lebih terarah dan pemantauan perkembangan anak secara berkala.",
+    price: "Rp1.000.000",
+    priceNote: "/ semester",
+    badge: "PROGRAM JANGKA PANJANG",
+    theme: "yellow",
+
+    features: [
+      { text: "Belajar bersama pengajar", included: true },
+      { text: "Materi sesuai level", included: true },
+      { text: "Tes level awal", included: true },
+      { text: "Sistem perkembangan level", included: true },
+      { text: "Laporan perkembangan bulanan", included: true },
+      { text: "Tes kenaikan level", included: true },
+      { text: "Target & roadmap belajar", included: true },
+      { text: "Evaluasi akhir semester", included: true },
+      { text: "Sertifikat pencapaian", included: true },
+    ],
   },
 
   {
     id: "private",
     icon: UserRound,
-    number: "03",
+    number: "04",
     title: "Private",
-    subtitle: "Fokus belajar 1 murid",
+    subtitle: "Fokus 1 murid 1 pengajar",
     description:
-      "Pengajar datang langsung ke rumah murid dan memberikan kegiatan belajar mengajar secara khusus agar materi dapat disampaikan sesuai kebutuhan murid.",
+      "Pembelajaran secara personal dengan pengajar yang datang langsung ke rumah murid dan menyesuaikan materi dengan kebutuhan belajar.",
     price: "Rp100.000",
     priceNote: "/ 4x pertemuan",
-    features: [
-      "1 murid dengan 1 pengajar",
-      "Pengajar datang ke rumah",
-      "Materi lebih fokus dan personal",
-    ],
-    theme: "yellow",
     badge: "1 ON 1",
-  },
-
-  {
-    id: "online",
-    icon: Monitor,
-    number: "04",
-    title: "Online Class",
-    subtitle: "Belajar dari mana saja",
-    description:
-      "Kegiatan belajar mengajar dilakukan secara online sehingga murid dapat mengikuti pembelajaran tanpa perlu datang ke lokasi.",
-    price: "Rp5.000",
-    priceNote: "/ Pertemuan",
-    features: [
-      "Belajar secara online",
-      "Fleksibel dari rumah",
-      "Tetap didampingi pengajar",
-    ],
     theme: "coral",
+
+    features: [
+      { text: "1 murid dengan 1 pengajar", included: true },
+      { text: "Pengajar datang ke rumah", included: true },
+      { text: "Materi sesuai kebutuhan", included: true },
+      { text: "Tes level awal", included: true },
+      { text: "Sistem perkembangan level", included: true },
+      { text: "Evaluasi perkembangan", included: true },
+    ],
   },
 ];
 
@@ -93,18 +122,21 @@ const THEME = {
     accent: "bg-purple",
     badge: "bg-purple-light text-purple",
   },
+
   teal: {
     icon: "bg-teal-light text-teal-dark",
     number: "text-teal-light",
     accent: "bg-teal",
     badge: "bg-teal-light text-teal-dark",
   },
+
   yellow: {
     icon: "bg-yellow-light text-yellow",
     number: "text-yellow-light",
     accent: "bg-yellow",
     badge: "bg-yellow-light text-[#8c6800]",
   },
+
   coral: {
     icon: "bg-coral-light text-coral",
     number: "text-coral-light",
@@ -120,7 +152,7 @@ function ProgramCard({ program }) {
   return (
     <div
       className="
-        group relative overflow-hidden
+        group relative flex h-full flex-col overflow-hidden
         rounded-[30px]
         border border-[#eee9f7]
         bg-white
@@ -145,7 +177,6 @@ function ProgramCard({ program }) {
       {/* Header */}
 
       <div className="flex items-start justify-between gap-4">
-
         <div
           className={`
             flex size-14 shrink-0
@@ -168,7 +199,6 @@ function ProgramCard({ program }) {
         >
           {program.number}
         </span>
-
       </div>
 
       {/* Badge */}
@@ -265,70 +295,89 @@ function ProgramCard({ program }) {
       {/* Features */}
 
       <div className="mt-5 space-y-3">
-
         {program.features.map((feature) => (
           <div
-            key={feature}
+            key={feature.text}
             className="
               flex items-start gap-2.5
               text-xs
-              text-muted
             "
           >
             <span
-              className="
+              className={`
                 mt-0.5
                 grid size-5 shrink-0
                 place-items-center
                 rounded-full
-                bg-teal-light
-                text-teal-dark
-              "
+                ${
+                  feature.included
+                    ? "bg-teal-light text-teal-dark"
+                    : "bg-gray-100 text-gray-400"
+                }
+              `}
             >
-              <Check size={12} strokeWidth={3} />
+              {feature.included ? (
+                <Check size={12} strokeWidth={3} />
+              ) : (
+                <X size={11} strokeWidth={2.5} />
+              )}
             </span>
 
-            <span>{feature}</span>
+            <span
+              className={
+                feature.included
+                  ? "text-muted"
+                  : "text-gray-400"
+              }
+            >
+              {feature.text}
+            </span>
           </div>
         ))}
-
       </div>
 
       {/* CTA */}
 
       <button
-        onClick={openWhatsApp}
+        type="button"
+        onClick={() => openWhatsApp()}
         className="
-          mt-7
-          inline-flex
-          w-full
-          min-h-[48px]
-          items-center
-          justify-center
-          gap-2
-          rounded-full
-          border-2
-          border-[#ded8ed]
-          bg-white
-          px-5
-          text-sm
-          font-bold
-          text-purple
-          transition-all
-          duration-300
-          hover:border-purple
-          hover:bg-purple
-          hover:text-white
+          mt-auto
+          pt-7
         "
       >
-        Tanya Program
-        <ArrowRight size={16} />
+        <span
+          className="
+            inline-flex
+            w-full
+            min-h-[48px]
+            items-center
+            justify-center
+            gap-2
+            rounded-full
+            border-2
+            border-[#ded8ed]
+            bg-white
+            px-5
+            text-sm
+            font-bold
+            text-purple
+            transition-all
+            duration-300
+            group-hover:border-purple
+            group-hover:bg-purple
+            group-hover:text-white
+          "
+        >
+          Tanya Program
+          <ArrowRight size={16} />
+        </span>
       </button>
     </div>
   );
 }
 
-function Program() {
+function ProgramPage() {
   return (
     <section
       id="program"
@@ -341,7 +390,6 @@ function Program() {
         md:py-24
       "
     >
-
       {/* =========================
           DECORATION
       ========================= */}
@@ -378,7 +426,6 @@ function Program() {
         ========================= */}
 
         <div className="section-heading">
-
           <span className="section-label">
             PROGRAM BELAJAR
           </span>
@@ -393,52 +440,92 @@ function Program() {
               md:text-5xl
             "
           >
-            Pilih Cara Belajar
+            Pilih Program Belajar
             <br />
 
             <span className="text-teal">
-              yang Paling Cocok
+              Sesuai Kebutuhan Anak
             </span>
           </h2>
 
           <p
             className="
-              text-muted
               mt-4
               max-w-2xl
               text-sm
               leading-7
+              text-muted
               md:text-base
             "
           >
-            Setiap anak memiliki kebutuhan belajar yang berbeda.
-            Karena itu, ILYON Academy menyediakan beberapa pilihan
-            program yang dapat disesuaikan dengan kebutuhan dan
-            kenyamanan belajar anak.
+            ILYON Academy menyediakan program belajar yang
+            fleksibel maupun berkelanjutan, dilengkapi dengan
+            sistem level untuk membantu memantau perkembangan
+            belajar anak.
           </p>
-
         </div>
 
         {/* =========================
-            PROGRAM GRID
+            REGULER
         ========================= */}
+
+        <div className="mb-6 mt-12">
+          <div className="flex items-center gap-3">
+            <div className="grid size-10 place-items-center rounded-xl bg-purple-light text-purple">
+              <Sparkles size={19} />
+            </div>
+
+            <div>
+              <h3 className="font-baloo text-2xl font-extrabold text-purple-dark">
+                Program Reguler
+              </h3>
+
+              <p className="text-xs text-muted">
+                Pilih berdasarkan kebutuhan dan lama belajar
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div
           className="
             grid
             gap-5
-            sm:grid-cols-2
-            lg:grid-cols-4
+            md:grid-cols-3
           "
         >
-
-          {PROGRAMS.map((program) => (
+          {PROGRAMS.slice(0, 3).map((program) => (
             <ProgramCard
               key={program.id}
               program={program}
             />
           ))}
+        </div>
 
+        {/* =========================
+            PRIVATE
+        ========================= */}
+
+        <div className="mb-6 mt-12">
+          <div className="flex items-center gap-3">
+            <div className="grid size-10 place-items-center rounded-xl bg-coral-light text-coral">
+              <UserRound size={19} />
+            </div>
+
+            <div>
+              <h3 className="font-baloo text-2xl font-extrabold text-purple-dark">
+                Program Private
+              </h3>
+
+              <p className="text-xs text-muted">
+                Pembelajaran lebih personal untuk kebutuhan khusus
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-md">
+          <ProgramCard program={PROGRAMS[3]} />
         </div>
 
         {/* =========================
@@ -447,7 +534,7 @@ function Program() {
 
         <div
           className="
-            mt-8
+            mt-10
             flex
             flex-col
             items-center
@@ -462,9 +549,7 @@ function Program() {
             sm:text-left
           "
         >
-
           <div className="flex items-center gap-3">
-
             <div
               className="
                 grid size-11 shrink-0
@@ -487,39 +572,35 @@ function Program() {
                 Konsultasikan kebutuhan belajar anak bersama kami.
               </p>
             </div>
-
           </div>
 
-         {/* Tombol Daftar Sekarang */}
-<button
-          type="button"
-          onClick={() => openWhatsApp()}
-          className="
-    inline-flex
-    min-h-[44px]
-    items-center
-    justify-center
-    gap-2
-    rounded-full
-    bg-purple
-    px-5
-    text-xs
-    font-bold
-    text-white
-    transition-all
-    hover:-translate-y-0.5
-    hover:bg-purple-dark
-  "
->
-  Daftar Sekarang
-  <ArrowRight size={15} />
-</button>
-
+          <button
+            type="button"
+            onClick={() => openWhatsApp()}
+            className="
+              inline-flex
+              min-h-[44px]
+              items-center
+              justify-center
+              gap-2
+              rounded-full
+              bg-purple
+              px-5
+              text-xs
+              font-bold
+              text-white
+              transition-all
+              hover:-translate-y-0.5
+              hover:bg-purple-dark
+            "
+          >
+            Daftar Sekarang
+            <ArrowRight size={15} />
+          </button>
         </div>
-
       </div>
     </section>
   );
 }
 
-export default Program;
+export default ProgramPage;

@@ -4,6 +4,8 @@ import HomePage from "../Pages/HomePage";
 import ProfilePage from "../Pages/ProfilePage";
 
 import MainLayout from "../Components/Layout/MainLayout";
+import ProgramPage from "../Pages/ProgramPage";
+import SchedulePage from "../Pages/Schedule";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <ProfilePage />,
+      },
+      {
+        path: "program",
+        element: <ProgramPage />,
+      },
+      {
+        path: "Schedule",
+        element: <SchedulePage />,
       },
     ],
   },
