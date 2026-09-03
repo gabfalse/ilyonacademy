@@ -10,7 +10,7 @@ export const SHEET_CONFIG = {
       import.meta.env.VITE_SHEET_STUDENTS || "DATA MURID",
 
     schedule:
-      import.meta.env.VITE_SHEET_SCHEDULE || "JADWAL LES",
+      import.meta.env.VITE_SHEET_SCHEDULE || "JADWAL",
 
     history:
       import.meta.env.VITE_SHEET_HISTORY || "RIWAYAT LES",
