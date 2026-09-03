@@ -1,5 +1,5 @@
 import { openWhatsApp } from "../../Utils/Whatsapp";
-import banner from "../../Assets/banner.png";
+import banner from "../../assets/banner.png"
 import StudentCounter from "../General/StudentCounter";
 
 function Hero() {
