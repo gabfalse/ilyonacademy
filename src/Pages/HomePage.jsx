@@ -1,3 +1,4 @@
+import Activity from "../Components/HomeComponents/Activity"
 import Advantages from "../Components/HomeComponents/Advantages"
 import Hero from "../Components/HomeComponents/Hero"
 
@@ -8,7 +9,7 @@ function HomePage() {
   return (
     <div>
       <Hero/>
-      
+      <Activity/>
       <Subjects/>
       <Advantages/>
     

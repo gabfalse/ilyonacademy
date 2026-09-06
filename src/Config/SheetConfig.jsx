@@ -15,6 +15,9 @@ export const SHEET_CONFIG = {
     history:
       import.meta.env.VITE_SHEET_HISTORY || "RIWAYAT LES",
 
+      activity:
+      import.meta.env.VITE_SHEET_ACTIVITY || "ACTIVITY",
+
     payment:
       import.meta.env.VITE_SHEET_PAYMENT || "PEMBAYARAN",
   },
