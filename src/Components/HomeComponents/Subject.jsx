@@ -2,6 +2,7 @@ import {
   BookOpen,
   Calculator,
   Code2,
+  Puzzle,
   Languages,
   Sparkles,
   CheckCircle2,
@@ -59,22 +60,22 @@ const SUBJECTS = [
       "Menulis & berhitung dasar",
     ],
   },
+{
+  id: "sensory-motoric",
+  title: "Sensory & Motoric Play",
+  subtitle: "Eksplorasi & Tumbuh Kembang",
+  description:
+    "Melatih kemampuan sensori dan motorik anak melalui aktivitas bermain yang menyenangkan, kreatif, dan sesuai dengan tahap tumbuh kembangnya.",
+  icon: Puzzle,
+  color: "coral",
 
-  {
-    id: "coding",
-    title: "Coding for Kids",
-    subtitle: "Kreativitas & Teknologi",
-    description:
-      "Mengenalkan dunia coding kepada anak melalui aktivitas yang interaktif dan sesuai dengan usia serta kemampuan mereka.",
-    icon: Code2,
-    color: "coral",
+  points: [
+    "Stimulasi sensori dan eksplorasi tekstur",
+    "Motorik halus & koordinasi tangan-mata",
+    "Motorik kasar & keseimbangan tubuh",
+  ],
+},
 
-    points: [
-      "Logika & computational thinking",
-      "Dasar pemrograman",
-      "Membuat project sederhana",
-    ],
-  },
 ];
 
 const COLOR_MAP = {

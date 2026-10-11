@@ -32,7 +32,7 @@ function Hero() {
           {/* =========================
               BANNER
           ========================= */}
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <div
               className="
                 relative
@@ -54,7 +54,7 @@ function Hero() {
                 "
               />
             </div>
-          </div>
+          </div> */}
 
 
           {/* =========================
@@ -162,7 +162,7 @@ function Hero() {
                 <span className="ml-2 text-lg">→</span>
               </button>
 
-              <a
+              {/* <a
                 href="/profile"
                 className="
                   inline-flex
@@ -184,7 +184,7 @@ function Hero() {
                 "
               >
                 Kenali Kami
-              </a>
+              </a> */}
             </div>
 
           </div>
@@ -266,7 +266,7 @@ function Hero() {
           {/* =========================
               STUDENT COUNTER
           ========================= */}
-          <div className="mt-5 flex justify-center">
+          {/* <div className="mt-5 flex justify-center">
 
             <div
               className="
@@ -310,7 +310,7 @@ function Hero() {
 
             </div>
 
-          </div>
+          </div> */}
 
         </div>
       </section>

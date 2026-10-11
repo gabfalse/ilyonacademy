@@ -62,7 +62,7 @@ function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-8 lg:flex">
-          <a
+          {/* <a
             href="/program"
             className="
               text-sm font-semibold text-muted
@@ -80,7 +80,7 @@ function Navbar() {
             "
           >
             Jadwal
-          </a>
+          </a> */}
 
           <button
             type="button"
