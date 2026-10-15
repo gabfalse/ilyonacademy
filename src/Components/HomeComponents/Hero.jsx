@@ -4,18 +4,18 @@ import StudentCounter from "../General/StudentCounter";
 
 function Hero() {
   const features = [
-    {
-      title: "Pengajar Berpengalaman",
-      icon: "🎓",
-    },
-    {
-      title: "Pembelajaran Menyenangkan",
-      icon: "✨",
-    },
-    {
-      title: "Pendampingan Akademik",
-      icon: "📚",
-    },
+    // {
+    //   title: "Pengajar Berpengalaman",
+    //   icon: "🎓",
+    // },
+    // {
+    //   title: "Pembelajaran Menyenangkan",
+    //   icon: "✨",
+    // },
+    // {
+    //   title: "Pendampingan Akademik",
+    //   icon: "📚",
+    // },
   ];
 
   return (
@@ -97,10 +97,10 @@ function Hero() {
                 lg:text-[78px]
               "
             >
-              Belajar Seru,
+              Learn, Grow, 
               <br />
               <span className="text-teal">
-                Prestasi Maju!
+                and Achieve!
               </span>
             </h1>
 
